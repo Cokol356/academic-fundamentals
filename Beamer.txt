@@ -1,0 +1,93 @@
+
+\documentclass{beamer}
+\usepackage{wrapfig}
+\usepackage{subcaption}
+
+\usetheme{AnnArbor}
+\usecolortheme{beaver}
+
+\title{Privacy preserving distributed data mining based on secure multi-party computation }
+\author{Authors of the presentation: Mihailov Daniel and Malgin Dimitri }
+\date{}
+
+\begin{document}
+
+\begin{frame}{}
+    \titlepage
+\end{frame}
+
+\section{Objectives}
+\begin{frame}{Objectives}
+
+    \begin{itemize}
+        \item To introduce what data mining is 
+        \item To define two problems to be solved
+        \item Explain each task in detail
+        \item Provide algorithms 1,2,3 as solutions
+    \end{itemize}
+
+\end{frame}
+\section{Introduction}
+\begin{frame}{Introduction}
+\begin{alertblock}{Text Data Mining}
+    In recent years, we have witnessed an unprecedented big data explosion than ever before, especially for private data in business environments.
+
+\end{alertblock}
+
+\end{frame}
+\section{Problems}
+\begin{frame}
+\alert{Problem definition} In this section, we will first introduce two real-world tasks of privacy preserving distributed mining.
+
+\begin{picture}(100,100)
+\put(95,80){\framebox(140,15){Two problems}}
+\pause
+\put(115,80){\vector(0,-1){12.5}}
+\put(45,52.5){\framebox(120,15){1) Calculating Statistics }}
+\pause
+\put(205,80){\vector(0,-1){12.5}}
+\put(175,52.5){\framebox(115,15){2) Linear Regression }}
+\end{picture}
+\end{frame}
+
+
+
+\section{Task 1}
+\begin{frame}{Task 1}
+\begin{wrapfigure}{r}{0.6\textwidth}
+\label{fig:wrapfig}
+\end{wrapfigure}
+    Here, we first define the problem of calculating statistics of different types of data under privacy preserving distributed data mining condition as:
+
+Given data in the form of ?type, value? tuples, the problem is to calculate the statistical indicators of given data, without privacy leak risk for both type and value in original data.
+
+
+
+\end{frame}
+
+\section{Task 2}
+\begin{frame}{Task 2}
+\begin{wrapfigure}{r}{0.6\textwidth}
+\label{fig:wrapfig}
+\end{wrapfigure}
+    In general, we can use the linear regression to reveal the relationship between variables.The same concern of business privacy leakage exists if these companies are asked to disclose their trading records to perform linear regression analysis.Hence, we define the problem of performing linear regression under privacy preserving distributed data mining condition.
+\end{frame}
+
+
+
+\section{Conclusions}
+\begin{frame}{Conclusions}
+\begin{wrapfigure}{l}{0.5\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{1511px-Isle_of_the_Dead_(Hermitage_Version).jpg}
+\end{figure}
+\label{fig:wrapfig1}
+\end{wrapfigure}
+     Privacy preserving distributed data mining is an important task for big data. In this paper, we have proposed to utilize the MPC and SPDZ protocol to perform this task.To accomplish these data mining tasks, we have proposed two solutions based on matrix computation with one-hot encoding and LU decomposition.
+\end{frame}
+
+\begin{frame}
+    \tableofcontents
+\end{frame}
+\end{document}
